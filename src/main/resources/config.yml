@@ -1,0 +1,29 @@
+# RandomSkillPlugin Configuration
+
+# Pesan prefix plugin
+prefix: "&8[&6RandomSkill&8] "
+
+# Skill chance dikalkulasi per kill mob
+# Persentase dapat skill (0-100)
+skill-chance: 40
+
+# Durasi skill dalam detik (yang ada durasinya)
+skill-duration:
+  freeze: 6           # Freeze player lain
+  darkness: 10        # Bikin gelap player lain
+  buff-effects: 240   # Haste, Strength, Regen (4 menit)
+  instant-health: 1   # Langsung sembuh
+
+# Cooldown skill (detik), 0 = no cooldown
+skill-cooldown: 30
+
+# Pesan skill
+messages:
+  skill-received: "&aKamu mendapat skill: &e%skill%"
+  skill-used: "&aSkill &e%skill% &atelah digunakan!"
+  select-required: "&cSkill ini membutuhkan target! Gunakan &e/select <player> &clalu gunakan skill."
+  select-set: "&aTarget dipilih: &e%player%"
+  no-skill: "&cKamu tidak punya skill aktif!"
+  cooldown: "&cSkill masih cooldown! &e%time% &cdetik lagi."
+  target-offline: "&cPlayer target tidak online!"
+  skill-expired: "&cSkill kamu sudah expired tanpa digunakan."

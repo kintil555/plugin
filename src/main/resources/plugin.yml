@@ -1,0 +1,28 @@
+name: RandomSkillPlugin
+version: '${project.version}'
+main: com.randomskill.RandomSkillPlugin
+api-version: '1.21'
+description: Plugin skill random saat kill mob
+authors: [RandomSkill]
+
+commands:
+  select:
+    description: Pilih target player untuk skill yang membutuhkan target
+    usage: /select <playerName>
+    permission: randomskill.use
+  skill:
+    description: Lihat skill aktif kamu
+    usage: /skill
+    permission: randomskill.use
+  skillreload:
+    description: Reload konfigurasi plugin
+    usage: /skillreload
+    permission: randomskill.admin
+
+permissions:
+  randomskill.use:
+    description: Bisa menggunakan skill system
+    default: true
+  randomskill.admin:
+    description: Admin permission
+    default: op
