@@ -59,8 +59,7 @@ public class FreezeListener implements Listener {
 
         // Cek cause - izinkan teleport dari command/plugin
         PlayerTeleportEvent.TeleportCause cause = event.getCause();
-        if (cause == PlayerTeleportEvent.TeleportCause.ENDER_PEARL ||
-            cause == PlayerTeleportEvent.TeleportCause.CHORUS_FRUIT) {
+        if (cause == PlayerTeleportEvent.TeleportCause.ENDER_PEARL) {
             event.setCancelled(true);
         }
     }

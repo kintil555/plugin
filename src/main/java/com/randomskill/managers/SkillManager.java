@@ -384,7 +384,7 @@ public class SkillManager {
         target.sendMessage(color("&2☠ Kamu dikutuk racun oleh &e" + caster.getName() + " &2selama 30 detik!"));
         caster.sendMessage(color("&2☠ Kutukan racun berhasil diberikan ke &e" + target.getName() + "!"));
 
-        spawnParticles(target, Particle.SLIME, 25);
+        spawnParticles(target, Particle.ITEM_SLIME, 25);
         target.getWorld().playSound(target.getLocation(), Sound.ENTITY_WITCH_THROW, 1f, 1f);
     }
 
